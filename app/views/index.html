@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Test</title>
+  </head>
+  <body>
+    <article id="app"></article>
+    <!-- <h2>路由的两种模式</h2>
+    <h3>history</h3>
+    <a class="history a">a.html</a>
+    <a class="history b">b.html</a>
+    <h3>hash</h3>
+    <a class="hash a">a.html</a>
+    <a class="hash b">b.html</a>
+    <script>
+        //刷新可能有404错误，刷新会去请求服务器
+        document.querySelectorAll('.history').forEach(item => {
+          //第三个参数，true:捕获（自上而下），false：冒泡（自下而上）默认值false
+          item.addEventListener('click',(e) => {
+              e.preventDefault();
+              const link = item.textContent;
+              //三个参数，路由参数，页面标题，链接地址
+              window.history.pushState({name:'a'},'page a',link);    
+          },false);
+        })
+        //事件监听， 浏览器后退或前进触发
+        window.addEventListener('popstate',(e)=>{
+            console.log({
+              location: location.href,
+              state: e.state //参数{name:'a'}
+            })
+        },false);
+
+        //修改不会去请求服务器
+        document.querySelectorAll('.hash').forEach(item => {
+          //第三个参数，true:捕获（自上而下），false：冒泡（自下而上）默认值false
+          item.addEventListener('click',(e) => {
+              e.preventDefault();
+              const link = item.textContent;
+              location.hash = link;   
+          },false);
+        })
+        //事件监听，路由改变就会触发
+        window.addEventListener('hashchange',(e)=>{
+            console.log({
+              location: location.href,
+              hash: location.hash //参数{name:'a'}
+            })
+        },false);
+    </script> -->
+  </body>
+</html>
